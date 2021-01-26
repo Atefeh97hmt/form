@@ -1,0 +1,104 @@
+$colorprimary:rgb(232, 248, 253);
+@font-face {
+    font-family: 'iran-yekan';
+    src: url('../Iran_Yekan/Yekan.eot') format('embedded-opentype'), url('../Iran_Yekan/Yekan.woff') format('woff'), url('../Iran_Yekan/Yekan.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    font-family: iran-yekan;
+    direction: rtl;
+    background: $colorprimary;
+}
+
+label {
+    display: block;
+}
+
+.card-body {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 70px;
+}
+
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=number],
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=date],
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    text-align: right;
+    color: #0f3a7c;
+}
+
+button[type=submit] {
+    background-color: #000000;
+    color: white;
+    margin-top: 5px;
+}
+
+button[type=button] {
+    background-color: #000000;
+    color: white;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.time-flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.add-btn {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin-top: 48px;
+}
+
+.without_ampm::-webkit-datetime-edit-ampm-field {
+    display: none;
+}
+
+input[type=time]::-webkit-clear-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    margin: -10px;
+}
